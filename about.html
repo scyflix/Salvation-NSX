@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvation Nsx</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("img3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Open Sans", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        margin: 0 auto;
+        backdrop-filter: blur(10px) brightness(70%);
+        width: 95vw;
+        min-height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        color: black;
+        border-radius: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: gold;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+      }
+
+      #container {
+        backdrop-filter: blur(50px) brightness(30%);
+        width: 90vw;
+        max-width: 800px;
+        min-height: 400px;
+        margin: 20px auto;
+        color: beige;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px;
+        border-radius: 20px;
+        line-height: 1.6;
+      }
+
+      #container h2 {
+        margin-bottom: 15px;
+      }
+
+      #container p {
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      #gallery-link {
+        text-decoration: none;
+        width: 220px;
+        background-color: #444;
+        color: beige;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 25px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+
+      #gallery-link:hover {
+        background-color: #666;
+        transform: scale(1.05);
+      }
+
+      a {
+        color: gold;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        backdrop-filter: blur(50px) brightness(30%);
+        min-height: 40px;
+        color: beige;
+        text-align: center;
+        padding: 5px 0;
+      }
+      @media (max-width: 768px) {
+        header {
+          gap: 10px;
+        }
+
+        #container {
+          width: 95%;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Salvation</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="container">
+        <h2>About Salvation NSX</h2>
+        <p>
+          Salvation is a comic and digital artist who loves turning ideas into
+          colorful stories filled with energy and emotion. He focuses on
+          creating anime-inspired characters and bringing them to life through
+          expressive art and storytelling. Whether it’s designing unique
+          characters, illustrating epic scenes, or experimenting with new
+          digital techniques, he’s always exploring fresh ways to bring
+          imagination to life.
+          <br /><br />
+          Beyond illustrations, he also creates his own comic books — crafting
+          worlds, stories, and characters that reflect his passion for anime and
+          creative storytelling. Each project is a new adventure that challenges
+          him to grow as both an artist and a storyteller.
+          <br /><br />
+          For him, art isn’t just about visuals — it’s about connection. Through
+          his comics and digital artwork, he inspires others, like
+          <a
+            href="https://scyflix.github.io/Abdulroqib-Oladipo/portfolio.html"
+            target="_blank"
+            >Abdulroqib</a
+          >, to share emotions and show how imagination can turn even the
+          simplest ideas into something powerful and unforgettable.
+        </p>
+
+        <a href="gallery.html" id="gallery-link">Check Out My Work</a>
+      </div>
+    </main>
+    <footer><p>&copy; Scybud | Created by Abdulroqib Oladipo</p></footer>
+  </body>
+</html>

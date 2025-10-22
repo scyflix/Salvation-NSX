@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvation Nsx</title>
+    <style>
+      body {
+        background-image: url("img4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Open-Sans", Arial;
+      }
+      header {
+        margin: 0 auto;
+        backdrop-filter: blur(10px) brightness(80%);
+        width: 95vw;
+        min-height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        color: beige;
+        border-radius: 10px;
+      }
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
+      }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: beige;
+        margin: 10px;
+      }
+      nav ul li a:hover {
+        color: gold;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #container {
+        backdrop-filter: blur(50px) brightness(80%);
+        max-width: 300px;
+        height: 400px;
+        margin: 50px auto;
+        color: #f2f2f2;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        border-radius: 20px;
+      }
+      #container p {
+        font-size: 25px;
+        font-weight: 300;
+      }
+      #gallery-link {
+        text-decoration: none;
+        width: 200px;
+        background-color: #444;
+        color: beige;
+        height: 50px;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      #gallery-link:hover {
+        transform: scale(1.05);
+        background-color: #666;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          gap: 10px;
+        }
+
+        nav ul {
+          gap: 5px;
+        }
+
+        #container {
+          width: 90%;
+          height: auto;
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Salvation</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="container">
+        <h2>Hi, I`m Salvation NSX</h2>
+        <h3>A comic Artist</h3>
+        <p>
+          I bring stories to life through my ideas, imagination and fantacies
+        </p>
+        <a href="gallery.html" id="gallery-link">Check Out My Work</a>
+      </div>
+    </main>
+  </body>
+</html>
