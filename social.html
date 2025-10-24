@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="sidebar.css" />
     <style>
       html {
         scroll-behavior: smooth;
@@ -30,23 +31,6 @@
         height: 100%;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
         z-index: -1;
-      }
-
-      header {
-        margin: 5px auto;
-        backdrop-filter: blur(10px) brightness(70%);
-        width: 90vw;
-        min-height: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        color: #e0e0e0;
-        border-radius: 10px;
-        position: sticky;
-        padding: 0 10px;
-        top: 0;
-        z-index: 1000;
       }
 
       h1 {
@@ -152,8 +136,12 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>Salvation</h1>
+    <div id="sidebar">
+      <div id="menuIcon" onclick="togglesidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -162,6 +150,24 @@
           <li><a href="social.html">Social</a></li>
         </ul>
       </nav>
+    </div>
+    <header>
+      <div id="menuIcon" onclick="togglesidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="header">
+        <h1>Salvation</h1>
+        <nav id="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="social.html">Social</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -770,5 +776,11 @@
     </main>
     <footer><p>&copy; Scybud | Created by Abdulroqib Oladipo</p></footer>
     <script async src="//www.instagram.com/embed.js"></script>
+    <script>
+      const sidebar = document.getElementById("sidebar");
+      function togglesidebar() {
+        sidebar.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
