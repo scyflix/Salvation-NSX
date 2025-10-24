@@ -72,3 +72,14 @@ header {
     border-radius: 10px;
   }
 }
+#middle-cross {
+  opacity: 0;
+}
+#top-cross {
+  transition: transform 0.5s ease;
+  transform: rotate(-45deg) translate(-14px);
+}
+#bottom-cross {
+  transform: rotate(45deg) translate(-12px);
+  transition: transform 0.5s ease;
+}
