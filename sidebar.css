@@ -59,13 +59,15 @@ header {
     padding: 20px;
   }
 
-  #menuIcon {
+  #menuIcon,
+  #cancelIcon {
     display: flex;
     flex-direction: column;
     cursor: pointer;
     margin: 10px;
   }
-  #menuIcon span {
+  #menuIcon span,
+  #cancelIcon span {
     width: 30px;
     height: 5px;
     background-color: white;
