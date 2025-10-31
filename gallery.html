@@ -21,6 +21,7 @@
         background-position: center;
         background-attachment: fixed;
         font-family: "Open Sans", Arial, sans-serif;
+        scroll-behavior: smooth;
       }
       body::before {
         content: "";
@@ -90,9 +91,10 @@
       .gallery-item {
         overflow: hidden;
         border-radius: 15px;
-        position: relative;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         transition: transform 0.4s ease, box-shadow 0.4s ease;
+        position: sticky;
+        top: 0;
       }
 
       .gallery-item img {
@@ -105,7 +107,6 @@
       }
 
       .gallery-item:hover {
-        transform: scale(1.03);
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
       }
 
