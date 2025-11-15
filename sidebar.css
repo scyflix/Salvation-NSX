@@ -23,11 +23,13 @@ header {
 #sidebar {
   position: fixed;
   z-index: 3000;
-  top: 0;
+  top: -100%;
   left: -100%;
-  transition: left 0.4s ease;
+  transition: all 0.9s ease;
+  width: 100vw;
 }
 #sidebar.show {
+    top: 0;
 left: 0;
   transform: translatex(0);
 }
@@ -44,8 +46,10 @@ left: 0;
     gap: 60px;
   }
   #sidebar {
-    width: 50vw;
+    width: 80vw;
     height: 100vh;
+     bottom: -100%;
+  left: -100%;
   }
   .show {
     justify-content: flex-start;
